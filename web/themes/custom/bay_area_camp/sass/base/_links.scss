@@ -1,3 +1,4 @@
+
 a {
   &.arrow {
     &:after {
@@ -9,4 +10,10 @@ a {
   //font-family: $monsterrat;
   //font-size: 1.125rem;
   border-bottom: 3px solid $lightblue;
+}
+
+#toolbar-administration {
+  a  {
+    border-bottom: initial;
+  }
 }

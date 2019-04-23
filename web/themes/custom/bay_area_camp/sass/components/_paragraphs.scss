@@ -1,0 +1,6 @@
+.paragraph--type--text {
+  padding: 0 20px;
+  @include breakpoint('large') {
+    padding: initial;
+  }
+}

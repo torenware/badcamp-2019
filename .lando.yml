@@ -1,0 +1,8 @@
+name: badcamp
+recipe: drupal8
+config:
+  webroot: web
+  via: nginx
+  xdebug: true
+  php: '7.2'
+

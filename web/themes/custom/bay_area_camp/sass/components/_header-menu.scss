@@ -1,10 +1,11 @@
 #block-header-menu {
-  background-color: #fff;
 
+  background-color: #fff;
   padding-bottom: 2rem;
 
   @include breakpoint('medium') {
     padding-bottom: 0;
+    position: relative;
   }
 
   ul {
@@ -12,22 +13,27 @@
     @include breakpoint('medium') {
       float: none;
     }
-  }
+    @include breakpoint('large') {
+      justify-content: flex-end;
+    }
 
-  li {
-    margin: 0 11px;
+    li {
+      margin: 0 11px;
 
-    a {
-      padding: 10px;
-      border-bottom: 0 solid;
+      a {
+        padding: 10px;
+        border-bottom: 0 solid;
 
-      font-size: .9375rem;
-      @include breakpoint('medium') {
-        padding: 1rem;
-        font-size: 1.1875rem;
+        font-size: .9375rem;
+        @include breakpoint('medium') {
+          padding: 1rem;
+          font-size: 1.1875rem;
+        }
       }
     }
   }
+
+
 }
 
 .responsive-menu-button-wrap {
@@ -38,4 +44,10 @@
   line-height: 1;
   position: relative;
   right: 5px;
+
+  @include breakpoint('medium') {
+    position: absolute;
+    top: 5px;
+  }
+
 }

@@ -88,6 +88,9 @@
 }
 
 .event-details {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 51px;
 
   h2 {
     text-align: center;
@@ -95,7 +98,6 @@
     font-family: $monsterrat;
     font-weight: 700;
     line-height: 1;
-
     padding: 69px 0 37px 0;
   }
 
@@ -123,11 +125,6 @@
       }
     }
   }
-  .event-detail-image {
-
-  }
-
-  margin-bottom: 51px;
 }
 
 .main-block {
